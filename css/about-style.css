@@ -1,3 +1,13 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+section{
+    position: relative;
+    top: 98px;
+}
+
 .dark img{
     cursor: pointer;
 }
@@ -5,15 +15,17 @@ body{
     overflow: scroll;
 }    
 section{
-    padding: 50px 50px;
+    padding: 50px 10px;
     font-family: 'open sans';
     color: #19417E;
-    line-height: 2.8em;
+    line-height: 2.0em;
+    padding-left:200px;
+    padding-right:200px;
 }
 section h1{
     margin-bottom:20px;
-    font-size: 18px;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
     position: relative;
     padding-bottom:5px;
     margin-bottom: 20px;
@@ -21,7 +33,7 @@ section h1{
 section h1:nth-child(1){
     margin-top:20px;
 }
-section h1::after{
+/* section h1::after{
     content:"";
     width:4%;
     height: 3px;
@@ -30,17 +42,17 @@ section h1::after{
     bottom:-4px;
     left:48.5%;
     border-radius:5px;
-}
+} */
 section p{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 300;
     margin-bottom: 20px;
-    text-align: justify;
+    text-align:justify;
 }
 section li{
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 15px;
 }
 ul i{
     font-size: 30px !important;
@@ -72,10 +84,15 @@ ul i{
     margin-bottom: 30px;
     font-size: 25px;
 }
+.fa-toggle-off, .fa-toggle-on{
+    margin-top: 0;
+    color: #19417E;
+    font-size: 30px;
+}
 
 @media screen and (max-width:1176px){
     .dark{
-        margin-top: 35px;
+        margin-top: 34px;
         margin-right: 10px;
     }
     .cover ul{
@@ -122,14 +139,17 @@ ul i{
     }
     .ham{
         display: inline-block;
-        margin-top: 5px;
+        padding-top: 4px;
+        margin-right: 10px !important;
+       
     }
     .fa-bars{
-        margin-right:15px;
-        font-size: 28px;
-        margin-top: 19px;
+        margin-right:17px;
+        font-size: 30px;
+        margin-top: 28px;
         color: #19417E;
         cursor: pointer;
+        font-weight: 100 !important;
     }
     header img{
         margin-top: -13px;
@@ -142,6 +162,28 @@ ul i{
         margin-left: 5px;
     }
     section{
-        padding-top: 10px;
+        padding:0 40px;
+        padding-top: 20px;
+    }
+    .header-div img{
+        height: 90px;
+        width: 90px;
+        margin-top: 3px;
+    }
+    .fa-toggle-off, .fa-toggle-on{
+        margin-top: 0;
+        color: #19417E;
+        font-size: 30px;
+    }
+    .fa-toggle-on{
+        display: none;
+    }
+}
+
+@media screen and (max-width:414px){
+    .dark{
+        margin-right: 10px;
+        /* background-color: aqua; */
+        padding-right: 30px;
     }
 }

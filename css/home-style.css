@@ -41,11 +41,11 @@ section div button:hover{
     color: #19417E;
 }
 section img{
-    margin-top: -100px;
-    height: 710px;
+    margin-top: -85px;
+    height: 690px;
     width: 526px;
     padding: 0;
-    margin-left:20px; 
+    margin-left:25px; 
 }
 .ham{
     display: none;
@@ -56,12 +56,21 @@ section img{
 .cover span, .cover ul{
     display: none;
 }
-
+.fa-toggle-off, .fa-toggle-on{
+    margin-top: 0;
+    color: #19417E;
+    font-size: 30px;
+}
 
 
 @media screen and (max-width:1176px){
+.header-div img{
+    height: 90px;
+    width: 90px;
+    margin-top: 3px;
+}
 .dark{
-    margin-top: 35px;
+    margin-top: 34px;
     margin-right: 10px;
 }
 .cover ul{
@@ -113,6 +122,7 @@ section img{
      }
      section div h1{
         font-size: 1.5em;
+        margin-top: 5px;
      }
      section div{
          padding-top: 20px;
@@ -126,27 +136,38 @@ section img{
      .ham{
          display: inline-block;
          padding-top: 4px;
+         margin-right: 10px !important;
+        
      }
      .fa-bars{
-         margin-right:15px;
-         font-size: 28px;
-         margin-top: 17px;
+         margin-right:17px;
+         font-size: 30px;
+         margin-top: 28px;
          color: #19417E;
          cursor: pointer;
+         font-weight: 100 !important;
      }
   
      header img{
          margin-top: -13px;
          padding: 0;
      }
-     .fa-moon-o{
-         margin-top: 22px;
+     .fa-toggle-off, .fa-toggle-on{
+         margin-top: 0;
+         color: #19417E;
+         font-size: 30px;
+     }
+     .fa-toggle-on{
+         display: none;
      }
      .header-div{
          margin-left: 5px;
      }
      body{
          overflow:visible;
+     }
+     section div p{
+         margin-bottom: 30px;
      }
 }
 
@@ -197,6 +218,11 @@ section img{
         font-size:16px ;
         font-weight: 600;
 
+    }
+    .dark{
+        margin-right: 10px;
+        /* background-color: aqua; */
+        padding-right: 30px;
     }
 }
 

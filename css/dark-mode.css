@@ -1,4 +1,12 @@
 .dark-mode {
-    background-color: black;
-    color: white;
+  --body-color:black;
+  --head-color:black;
+  --shadow:black;
+  }
+
+  :root{
+    --body-color:whitesmoke;
+    --text-color:#19417e;
+    --head-color:rgb(239, 241, 241);
+    --shadow:#888888;
   }
